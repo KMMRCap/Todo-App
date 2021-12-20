@@ -1,0 +1,77 @@
+body {
+    background: darkslategray;
+    color: white;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.todo-form {
+    height: 100vh;
+}
+
+.card {
+
+    color: #6c757d;
+    .card-body {
+        padding: 0;
+    }
+    .card-title {
+        color: white;
+        height: 4rem;
+        margin: 0;
+        // background: linear-gradient(269.81deg, red -4.56%, orange 99.91%);
+        input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.login-container{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: bisque;
+    padding: 2rem 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #ffffff;
+
+    .sign-button{
+        color: black;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .sign-button:hover{
+        color: red;
+        transform: scale(1.2);
+    }
+}
+
+.logout , .backtohome{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+}
+.todoapp{
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+}
+
+@media (max-width: 768px){
+
+    .todo-form{
+        height: auto;
+    }
+}
+
+@media (max-width: 400px){
+
+    .card-title input{
+        width: 50%;
+    }
+}
